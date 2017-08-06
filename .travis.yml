@@ -3,11 +3,15 @@ language: node_js
 node_js:
   - 4
   - 6
+  - 8
 
-env: TEST=unit
+env:
+  - TEST=unit
+  - TEST=integration
 
 matrix:
-  include:
-    - env: TEST=suite_8
+  exclude:
+    - node_js: 4
+      env: TEST=unit
 
 script: echo $TEST
