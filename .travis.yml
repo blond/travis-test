@@ -1,12 +1,12 @@
 language: node_js
 
 node_js:
-  - stable
   - 4
   - 6
 
 matrix:
   include:
-    - env: TEST=unit
+    - node_js: 8
+      env: TEST=suite_8
 
 script: echo $TEST
