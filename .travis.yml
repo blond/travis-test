@@ -7,6 +7,6 @@ node_js:
 
 matrix:
   include:
-  - env: TEST=unit
+    - env: TEST=unit
 
 script: echo $TEST
