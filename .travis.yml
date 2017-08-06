@@ -1,5 +1,9 @@
 language: node_js
+
+node_js: stable
+
 matrix:
   include:
-  - node_js: [4, 6, 8]
-script: echo $TEST_SUITE
+  - env: TEST=unit
+
+script: echo $TEST
