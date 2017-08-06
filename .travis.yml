@@ -11,6 +11,6 @@ env:
 
 matrix:
   exclude:
-    - node_js: 4
+    - env: TEST=unit
 
 script: echo $TEST
