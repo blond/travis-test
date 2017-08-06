@@ -8,7 +8,6 @@ env: TEST=unit
 
 matrix:
   include:
-    - node_js: 8
-      env: TEST=suite_8
+    - env: TEST=suite_8
 
 script: echo $TEST
