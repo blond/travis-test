@@ -7,3 +7,4 @@ script:
   - echo $-
   - node -p process.stdin
   - echo 123
+  - node -p process.stdout.isTTY
