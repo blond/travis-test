@@ -1,16 +1,6 @@
 language: node_js
 
 node_js:
-  - 4
-  - 6
   - 8
 
-env:
-  - TEST=unit
-  - TEST=integration
-
-matrix:
-  exclude:
-    - env: TEST=unit
-
-script: echo $TEST
+script: echo $-
