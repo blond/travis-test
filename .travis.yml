@@ -3,4 +3,7 @@ language: node_js
 node_js:
   - 8
 
-script: echo $-
+script:
+  - echo $-
+  - node -p process.stdin
+  - echo 123
